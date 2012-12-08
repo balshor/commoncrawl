@@ -925,11 +925,6 @@ public abstract class Query<DataType extends RPCStruct,ResultKeyType extends Wri
               LOG.info("Execute Local for Query:" + getQueryId() +" Running Merger");
               merger.mergeAndSpill(new Reporter() {
                 
-            	@Override
-            	public float getProgress() {
-            		return 0f;
-            	}
-            	  
                 @Override
                 public void progress() {
                 }

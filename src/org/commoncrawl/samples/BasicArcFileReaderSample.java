@@ -90,11 +90,6 @@ public class BasicArcFileReaderSample {
           RecordReader reader = inputFormat.getRecordReader(split, conf,
               new Reporter() {
 
-        	    @Override
-        	    public float getProgress() {
-        	    	return 0f;
-        	    }
-        	  
                 @Override
                 public Counter getCounter(Enum<?> arg0) {
                   return null;
